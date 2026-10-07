@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #172b4d;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+}
+
+/* Main content */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    background-color: white;
+    padding: 50px 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.hero h2 {
+    color: #1e3c72;
+    font-size: 30px;
+}
+
+/* Cards */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    color: #1e3c72;
+    border-bottom: 2px solid #2a5298;
+    padding-bottom: 8px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.cards .card {
+    flex: 1;
+}
+
+/* Buttons */
+
+.button,
+button {
+    display: inline-block;
+    background-color: #1e3c72;
+    color: white;
+    padding: 11px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background-color: #2a5298;
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e8eef7;
+    color: #1e3c72;
+}
+
+/* Skills */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background-color: #e8eef7;
+    color: #1e3c72;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Lists */
+
+li {
+    margin: 8px 0;
+}
+
+/* JavaScript hidden content */
+
+#moreText {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e8eef7;
+    border-radius: 6px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile view */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+}
